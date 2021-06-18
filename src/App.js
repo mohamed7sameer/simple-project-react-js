@@ -11,16 +11,13 @@ import FooterComponent from './Components/FooterComponent' ;
 
 function App() {
   return (
-    
-      
       <BrowserRouter>
         <NavbarComponent />
+        <Route exact path='/simple-project-react-js/' component={IndexComponent} />
         <Route exact path='/' component={IndexComponent} />
-        <Route path='/contact' component={ContactComponent} />
+        <Route path='/simple-project-react-js/contact' component={ContactComponent} />
         <FooterComponent />
       </BrowserRouter>
-      
-    
   );
 }
 
